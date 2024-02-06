@@ -14,3 +14,6 @@ class SalesOrder(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     products = models.ManyToManyField(Product)
 
+    def __str__(self):
+        return self.user
+

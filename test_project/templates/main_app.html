@@ -23,7 +23,14 @@
         <span v-if="order.is_exist">est'</span>
         <span v-else>nety</span>
         <br>
-        gg: {{order}}
+        Staff products:
+        <span v-for="product in order.products">
+            {{product}}
+            ;
+        </span>
+        <br><br><br>
+        {{order}}
+        <br><br>
     </div>
 </div>
 {% endverbatim %}
