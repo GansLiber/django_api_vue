@@ -6,4 +6,4 @@ from orders.models import SalesOrder
 class OrderSerializer(ModelSerializer):
     class Meta:
         model = SalesOrder
-        fields = ['amount', 'description']
+        fields = ['amount', 'description', 'is_exist', 'user', 'products']
